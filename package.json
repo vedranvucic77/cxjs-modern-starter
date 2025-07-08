@@ -1,0 +1,61 @@
+{
+  "name": "cxjs-modern-starter",
+  "version": "1.0.0",
+  "description": "Starter template for CxJS with TypeScript, Tailwind CSS v5, and SWC for blazing fast builds.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js",
+    "dev-cert-uninstall": "office-addin-dev-certs uninstall"
+  },
+  "keywords": [
+    "cxjs",
+    "typescript",
+    "tailwind",
+    "tailwindcss",
+    "swc",
+    "template",
+    "starter"
+  ],
+  "author": "Vedran",
+  "license": "ISC",
+  "dependencies": {
+    "css-minimizer-webpack-plugin": "^7.0.2",
+    "cx": "^25.6.3",
+    "cx-immer": "^25.5.0",
+    "cx-react": "^24.7.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "terser-webpack-plugin": "^5.3.14"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.4.8",
+    "@tailwindcss/postcss": "^4.1.11",
+    "@types/node": "22.15.3",
+    "@types/react": "18.3.20",
+    "@types/react-dom": "18.3.7",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "i": "^0.3.7",
+    "mini-css-extract-plugin": "^2.9.2",
+    "npm": "^11.4.2",
+    "office-addin-dev-certs": "2.0.4",
+    "postcss": "8.5.4",
+    "postcss-loader": "8.1.1",
+    "sass": "^1.72.0",
+    "sass-loader": "16.0.5",
+    "style-loader": "4.0.0",
+    "swc-loader": "0.2.6",
+    "swc-minify-webpack-plugin": "2.1.3",
+    "swc-plugin-transform-cx-imports": "24.3.3",
+    "swc-plugin-transform-cx-jsx": "24.5.1",
+    "tailwindcss": "^4.0.9",
+    "typescript": "5.8.3",
+    "webpack": "5.99.9",
+    "webpack-bundle-analyzer": "4.10.2",
+    "webpack-cli": "6.0.1",
+    "webpack-dev-server": "5.2.1",
+    "webpack-merge": "^6.0.1"
+  }
+}

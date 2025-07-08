@@ -1,0 +1,91 @@
+@use "sass:math";
+
+html {
+  font-weight: 500;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+$cx-default-grid-header-background-color: #f9fafb !default;
+$cx-default-grid-header-color: #6b7280 !default;
+$cx-default-grid-header-font-weight: 600 !default;
+$cx-default-grid-header-font-size: 12px !default;
+$cx-default-grid-header-border-color: #e5e7eb !default;
+
+$cx-default-grid-data-padding: 12px 16px !default;
+$cx-default-grid-border-color: #e5e7eb !default;
+
+$cx-grid-pagination-default-border-radius: 6px !default;
+$cx-grid-pagination-default-outer-border-radius: 6px !default;
+
+@import "~cx/src/variables";
+
+@function cx-divide($a, $b) {
+  @return math.div($a, $b);
+}
+
+$cx-grid-data-state-style-map: cx-deep-map-merge(
+  $cx-grid-data-state-style-map,
+  (
+    default: (
+      border-bottom: 1px solid #e5e7eb,
+      background-color: white,
+    ),
+    hover: (
+      background-color: #f3f4f6,
+    ),
+    selected: (
+      background-color: #dbeafe,
+      color: #2563eb,
+    ),
+    selected-hover: (
+      background-color: #dbeafe,
+      color: #2563eb,
+    ),
+  )
+);
+
+$cx-grid-header-state-style-map: cx-deep-map-merge(
+  $cx-grid-header-state-style-map,
+  (
+    default: (
+      text-transform: uppercase,
+      letter-spacing: 0.05em,
+    ),
+  )
+);
+
+$cx-std-field-state-style-map: cx-deep-map-merge(
+  $cx-std-field-state-style-map,
+  (
+    default: (
+      border-radius: 8px,
+      border-color: #d1d5db,
+      background-color: white,
+      color: #111827,
+      font-size: 14px,
+      padding: 10px 14px,
+    ),
+    focus: (
+      border-color: #3b82f6,
+      box-shadow: 0 0 0 1px #3b82f6,
+    ),
+    error: (
+      border-color: #ef4444,
+      box-shadow: 0 0 0 1px #ef4444,
+    ),
+    placeholder: (
+      color: #9ca3af,
+    ),
+  )
+);
+
+@import "./manifest.scss";
+
+@layer theme, base, components, cxjs, utilities;
+
+@layer cxjs {
+  @import "~cx/src/index";
+}

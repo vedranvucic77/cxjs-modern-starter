@@ -1,0 +1,34 @@
+//THIS FILE IS AUTO-GENERATED USING cx-scss-manifest-webpack-plugin
+
+$cx-include-all: false;
+
+@include cx-widgets(
+	"cx/charts/Bar",
+	"cx/charts/BarGraph",
+	"cx/charts/CategoryAxis",
+	"cx/charts/Chart",
+	"cx/charts/Gridlines",
+	"cx/charts/NumericAxis",
+	"cx/data/Store",
+	"cx/data/createAccessorModelProxy",
+	"cx/svg/Svg",
+	"cx/ui/Controller",
+	"cx/ui/FirstVisibleChildLayout",
+	"cx/ui/History",
+	"cx/ui/Url",
+	"cx/ui/Widget",
+	"cx/ui/createFunctionalComponent",
+	"cx/ui/enableCultureSensitiveFormatting",
+	"cx/ui/startHotAppLoop",
+	"cx/util/Debug",
+	"cx/util/Timing",
+	"cx/util/getSearchQueryPredicate",
+	"cx/widgets/Grid",
+	"cx/widgets/HighlightedSearchText",
+	"cx/widgets/HtmlElement",
+	"cx/widgets/Link",
+	"cx/widgets/Route",
+	"cx/widgets/TextField",
+	"cx/widgets/enableMsgBoxAlerts",
+	"cx/widgets/enableTooltips"
+);
